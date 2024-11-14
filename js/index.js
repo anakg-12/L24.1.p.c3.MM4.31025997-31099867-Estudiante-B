@@ -21,9 +21,9 @@ let nombresDeAprobados = (estudiantes)=> {
         }
     }
     return nombres;
-
 }
 
 let salida= document.getElementById("salida");
 let aprobados= nombresDeAprobados(estudiantes);
-salida.innerHTML=`estudiantes aprobados: ${nombresDeAprobados(estudiantes)}`
+
+salida.innerHTML="estudiantes aprobados:" + JSON.stringify(nombresDeAprobados(estudiantes));
